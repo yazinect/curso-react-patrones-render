@@ -30,7 +30,7 @@ function App() {
   } = useTodos();
   return (
     <React.Fragment>
-      <TodoHeader>
+      <TodoHeader loading={loading}>
         {/* TodoCounter y TodoSearch tienen accesso al state aunque estén dentro de TodoHeader */}
         <TodoCounter totalTodos={totalTodos} completedTodos={completedTodos} />
         <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
